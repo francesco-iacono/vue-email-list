@@ -30,6 +30,11 @@
 .email-list li {
   padding: 5px 0;
   border-bottom: 1px solid lightgray;
+  cursor: pointer;
+}
+.email-list li:hover {
+  color: #343A40;
+  transition-duration: 0.2s;
 }
 .email-list li:last-child {
   border-bottom: 0;
