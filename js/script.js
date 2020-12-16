@@ -3,7 +3,6 @@
 var app = new Vue({
   el: '#app',
   data: {
-    ciao: 'ciao',
     emailList: [],
     newEmail: '',
   },
@@ -13,9 +12,9 @@ var app = new Vue({
           .get('https://flynn.boolean.careers/exercises/api/random/mail')
           .then( (result) => {
             this.newEmail = result.data.response;
-            console.log(this.newEmail);
+            // console.log(this.newEmail);
             this.emailList.push(this.newEmail)
-            console.log(this.emailList);
+            // console.log(this.emailList);
          }
         );
       }
